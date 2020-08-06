@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Antd from 'ant-design-vue';
 import App from './App';
-import 'ant-design-vue/dist/antd.less';
-
+import 'ant-design-vue/dist/antd.css';
+import '../style.css';
 
 Vue.config.productionTip = false;
 
