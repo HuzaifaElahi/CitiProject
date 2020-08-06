@@ -54,7 +54,6 @@ def update_password(username, newpassword):
         if user['username'] == username:
             userthere = True
             if user['password'] != newpassword:
-                validpassword = True
                 user['password'] = newpassword
     if(userthere == False):
         return jsonify({'message': 'users not found'})
