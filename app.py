@@ -47,7 +47,7 @@ def get_users():
     return jsonify({'users': users})
 
 #PUT 
-@app.route('/user/<string:username>', methods=['PUT'])
+@app.route('/user/<string:username>/<string:newpassword>', methods=['PUT'])
 def update_password(username, newpassword):
     userthere = False
     for user in users:
