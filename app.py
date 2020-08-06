@@ -47,7 +47,7 @@ def get_users():
     return jsonify({'users': users})
 
 #PUT 
-@app.route('/user/<string:username>')
+@app.route('/user/<string:username>',  methods=['PUT'])
 def update_password(username, newpassword):
     userthere = False
     for user in users:
@@ -62,10 +62,11 @@ def update_password(username, newpassword):
     
 
 #DELETE
-@app.route('/user/<string:username>')
+@app.route('/user/<string:username>', methods=['DELETE'])
 def delete_user(username):
     global users
     users = list(filter(lambda x: x['username'] != username, users))
+    print (jsonify(users))
     return {'message': 'User deleted'}
 
 
