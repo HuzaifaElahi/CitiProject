@@ -1,0 +1,22 @@
+@import '~antd/dist/antd.dark.css';
+@import '~antd/dist/antd.compact.css';
+
+.menu, .layout, .header, .footer, .flexbox {
+    background-color: #0050b3;
+    border-color: #1890ff;
+    font-family: 'Helvetica Neue';
+    color: white;
+    font-size: 16px;
+    left: 0;
+    right: 0;
+}
+.menu {
+    text-align: right;
+}
+.antd-form {
+    width: 1000px;
+}
+.label {
+    color:white;
+    font-family: 'Helvetica Neue';
+}
